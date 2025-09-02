@@ -136,6 +136,18 @@ $ npm start
 // Code written: 0 lines
 ```
 
+## RN/RN for the rescue
+Our soulmate got assigned to a failed React Native project, had to live through all the pain, and decided to create a framework that attempts to avoid the **React Awfulness**.
+
+- Reliable and scalable state management pattern using Zustand + Immer to eliminate prop drilling
+- Minimal-to-no hooks to keep your leg intact
+- No pain but gain Http client wrapper
+- Actually useful programming patterns to learn and use
+- Scalable, maintainable architecture to create readable code, not spaghetti
+- Theming system without bloated fancy libraries
+
+Check it out: https://github.com/petertoth-dev/rn-rn
+
 ## Testimonials
 
 > "I felt seen, heard, and validated in my React trauma" — Every React Developer
