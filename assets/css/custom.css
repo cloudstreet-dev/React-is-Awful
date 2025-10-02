@@ -1,9 +1,21 @@
 /* Custom styles for Reactive book */
 
+/* Ensure proper layout spacing */
+header {
+  padding-bottom: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  clear: both;
+}
+
 .book-nav {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #e5e5e5;
+  margin-bottom: 20px;
 }
 
 .book-nav h2 {
@@ -97,6 +109,8 @@ blockquote {
 /* Improve readability */
 section {
   max-width: 800px;
+  padding-bottom: 40px;
+  min-height: 400px;
 }
 
 h1, h2, h3, h4, h5, h6 {
