@@ -21,11 +21,11 @@ A complete React education disguised as a 21-chapter complaint about React. Writ
 ## What You'll Learn
 
 Everything you need to know about React, including:
-- ❌ Why it exists (Facebook's notification counter was sometimes wrong)
-- ❌ The Virtual DOM (a solution to a problem React created)
-- ❌ JSX (HTML and JavaScript had a baby nobody asked for)
-- ❌ Hooks (functions that remember things, breaking everything functions stand for)
-- ❌ useEffect (the footgun you'll shoot yourself with)
+- 📖 Why it exists (Facebook's notification counter was sometimes wrong)
+- 📖 The Virtual DOM (a solution to a problem React created)
+- 📖 JSX (HTML and JavaScript had a baby nobody asked for)
+- 📖 Hooks (functions that remember things, breaking everything functions stand for)
+- 📖 useEffect (the footgun you'll shoot yourself with)
 - ✅ How to get a job anyway
 
 ## Who This Book Is For
