@@ -1,0 +1,12 @@
+<nav class="book-nav">
+  <h2>{{ site.title }}</h2>
+  <ul>
+    {% for item in site.navigation %}
+    <li>
+      <a href="{{ site.baseurl }}{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>
+        {{ item.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

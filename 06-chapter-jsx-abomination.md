@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 6: JSX"
+nav_order: 7
+---
+
 # Chapter 6: JSX: When HTML and JavaScript Had a Baby Nobody Asked For
 
 JSX is React's most visible feature and its most controversial. It's the thing that makes React developers say "it's just JavaScript!" and everyone else say "that's definitely not JavaScript."

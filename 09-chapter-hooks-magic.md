@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 9: Hooks"
+nav_order: 10
+---
+
 # Chapter 9: Hooks: The Magic That Makes You Miss Classes
 
 In 2018, React said, "You know those class components we've been telling you to use for the past five years? Yeah, forget about them. Functions are the future now. Here's a bunch of magic functions that start with 'use' to make it work."

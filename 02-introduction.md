@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Introduction"
+nav_order: 3
+---
+
 # Introduction: Why You're Reading This (And Why You Hate React)
 
 Let me guess. You're here because:

@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 14: Testing"
+nav_order: 15
+---
+
 # Chapter 14: Testing React: Because Your Components Need Therapy Too
 
 Testing React applications is like trying to test a house of cards in a wind tunnel. You're not testing your code so much as testing React's abstractions of your code's representation of what might eventually become DOM elements. If that sounds complicated, wait until you see the actual tests.

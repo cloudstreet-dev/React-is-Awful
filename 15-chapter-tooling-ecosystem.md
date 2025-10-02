@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 15: Ecosystem"
+nav_order: 16
+---
+
 # Chapter 15: The Ecosystem: 47 Ways to Build the Same Thing
 
 The React ecosystem is like a buffet where every dish is spaghetti, but each one is tangled differently. You have 47 choices for every decision, each claiming to be "the best way," and by the time you've chosen, three new options have appeared and yours is deprecated.

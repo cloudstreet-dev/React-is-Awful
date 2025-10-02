@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Appendix: Resources"
+nav_order: 21
+---
+
 # Appendix: Resources for Recovery
 
 ## Documentation That Actually Helps

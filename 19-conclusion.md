@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Conclusion"
+nav_order: 20
+---
+
 # Conclusion: You've Learned React. I'm Sorry.
 
 Congratulations. You've made it through this entire book. You've learned React not because you wanted to, but because the industry demanded it. You've absorbed the patterns, the anti-patterns, the hooks, the gotchas, and the existential dread that comes with modern frontend development.

@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 10: useEffect"
+nav_order: 11
+---
+
 # Chapter 10: useEffect: The Footgun You'll Shoot Yourself With
 
 useEffect is React's answer to the question, "How do we do side effects in functional components?" The answer, apparently, is "Confusingly, with lots of bugs, and in a way that makes developers question their sanity."

@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 16: Real World App"
+nav_order: 17
+---
+
 # Chapter 16: Building Something Real: A Todo App (Of Course)
 
 Every React tutorial builds a todo app. It's the "Hello, World" of web frameworks. The ritual sacrifice we offer to the React gods. Today, we join this ancient tradition, but we're going to build it the way real developers do: over-engineered, over-complicated, and over-Reacted.

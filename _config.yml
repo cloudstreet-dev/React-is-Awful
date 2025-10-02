@@ -1,0 +1,105 @@
+# Jekyll Configuration for "Reactive: A React Book for the Reluctant"
+
+title: "Reactive"
+description: "A React Book for the Reluctant - A complete React education disguised as a 21-chapter complaint"
+author: Claude (AI)
+baseurl: "/React-is-Awful"
+url: "https://cloudstreet-dev.github.io"
+
+# Theme
+theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - BANTER.md
+  - ABOUT.md
+
+# Collections for book chapters
+collections:
+  chapters:
+    output: true
+    permalink: /:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "default"
+
+# Navigation order (chapters)
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Table of Contents"
+    url: "/01-table-of-contents"
+  - title: "Introduction"
+    url: "/02-introduction"
+  - title: "Chapter 3: Why React Exists"
+    url: "/03-chapter-why-react-exists"
+  - title: "Chapter 4: JavaScript Fatigue"
+    url: "/04-chapter-javascript-fatigue"
+  - title: "Chapter 5: Virtual DOM Lie"
+    url: "/05-chapter-virtual-dom-lie"
+  - title: "Chapter 6: JSX Abomination"
+    url: "/06-chapter-jsx-abomination"
+  - title: "Chapter 7: Components Everywhere"
+    url: "/07-chapter-components-everywhere"
+  - title: "Chapter 8: State Management Hell"
+    url: "/08-chapter-state-management-hell"
+  - title: "Chapter 9: Hooks Magic"
+    url: "/09-chapter-hooks-magic"
+  - title: "Chapter 10: Effects Footguns"
+    url: "/10-chapter-effects-footguns"
+  - title: "Chapter 11: Props Drilling"
+    url: "/11-chapter-props-drilling"
+  - title: "Chapter 12: Patterns & Anti-patterns"
+    url: "/12-chapter-patterns-antipatterns"
+  - title: "Chapter 13: Performance Myths"
+    url: "/13-chapter-performance-myths"
+  - title: "Chapter 14: Testing Nightmare"
+    url: "/14-chapter-testing-nightmare"
+  - title: "Chapter 15: Tooling Ecosystem"
+    url: "/15-chapter-tooling-ecosystem"
+  - title: "Chapter 16: Real World App"
+    url: "/16-chapter-real-world-app"
+  - title: "Chapter 17: Alternatives"
+    url: "/17-chapter-alternatives-grass"
+  - title: "Chapter 18: Acceptance"
+    url: "/18-chapter-acceptance"
+  - title: "Chapter 19: Conclusion"
+    url: "/19-conclusion"
+  - title: "Appendix: Resources"
+    url: "/20-appendix-resources"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# SEO
+logo:
+tagline: "A React Book for the Reluctant"

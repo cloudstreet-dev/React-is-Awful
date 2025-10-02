@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 18: Acceptance"
+nav_order: 19
+---
+
 # Chapter 18: Acceptance: Making React Work for You (Not the Other Way Around)
 
 You've been through denial ("React isn't that complicated"). You've experienced anger ("Why does useEffect run twice?!"). You've bargained ("Maybe if I just use Next.js..."). You've felt the depression ("node_modules is 2GB for a counter"). 

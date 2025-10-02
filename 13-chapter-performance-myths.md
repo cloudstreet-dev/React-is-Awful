@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 13: Performance"
+nav_order: 14
+---
+
 # Chapter 13: Performance: When React is Actually Fast (Sometimes)
 
 "React is fast!" cry the evangelists. "React is slow!" cry the critics. The truth? React is exactly as fast as you let it be, which is usually not very fast at all because you're doing everything wrong.

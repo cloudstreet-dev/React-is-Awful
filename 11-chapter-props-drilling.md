@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Chapter 11: Props Drilling"
+nav_order: 12
+---
+
 # Chapter 11: Props Drilling: Pass It Down, Pass It Down, Pass It Down...
 
 Props drilling is what happens when your great-grandmother needs to pass down a family heirloom to you, but instead of giving it directly, she has to give it to your grandmother, who gives it to your mother, who gives it to you. Except your grandmother and mother don't care about the heirloom at all. They're just the middlemen in this generational game of hot potato.

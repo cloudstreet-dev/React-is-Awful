@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Table of Contents"
+nav_order: 2
+---
+
 # Table of Contents
 
 ## Preface: A Note of Warning
