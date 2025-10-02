@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Reactive: A React Book for the Reluctant"
+title: "Home"
+nav_order: 1
 ---
 
 # Reactive: A React Book for the Reluctant
@@ -78,7 +79,7 @@ Everything you need to know about React, including:
 
 <div align="center">
 
-**[Start Reading →](01-table-of-contents)**
+**[Start Reading →]({{ '/01-table-of-contents' | relative_url }})**
 
 *Warning: Reading this book will teach you React.*
 *We apologize in advance.*

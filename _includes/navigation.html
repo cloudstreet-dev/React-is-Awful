@@ -1,9 +1,9 @@
 <nav class="book-nav">
-  <h2>{{ site.title }}</h2>
+  <h2>Chapters</h2>
   <ul>
     {% for item in site.navigation %}
     <li>
-      <a href="{{ site.baseurl }}{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>
+      <a href="{{ item.url | relative_url }}" {% if page.url contains item.url %}class="active"{% endif %}>
         {{ item.title }}
       </a>
     </li>

@@ -32,6 +32,10 @@
 
       {{ content }}
 
+      {% if page.nav_order %}
+        {% include page-nav.html %}
+      {% endif %}
+
       </section>
       <footer>
         <p><small>{{ site.tagline }}</small></p>

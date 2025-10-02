@@ -1,0 +1,32 @@
+{% comment %}
+  Generate previous/next navigation links based on nav_order
+{% endcomment %}
+
+{% assign current_order = page.nav_order | default: 1 %}
+{% assign prev_page = nil %}
+{% assign next_page = nil %}
+
+{% comment %} Find all pages and sort by nav_order {% endcomment %}
+{% assign sorted_pages = site.pages | where_exp: "item", "item.nav_order" | sort: "nav_order" %}
+
+{% for p in sorted_pages %}
+  {% if p.nav_order < current_order %}
+    {% assign prev_page = p %}
+  {% endif %}
+  {% if p.nav_order > current_order and next_page == nil %}
+    {% assign next_page = p %}
+  {% endif %}
+{% endfor %}
+
+<nav class="page-navigation">
+  <div class="prev">
+    {% if prev_page %}
+      <a href="{{ prev_page.url | relative_url }}">← {{ prev_page.title }}</a>
+    {% endif %}
+  </div>
+  <div class="next">
+    {% if next_page %}
+      <a href="{{ next_page.url | relative_url }}">{{ next_page.title }} →</a>
+    {% endif %}
+  </div>
+</nav>

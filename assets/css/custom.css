@@ -133,19 +133,34 @@ ul, ol {
 .page-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid #e5e5e5;
+  gap: 20px;
+}
+
+.page-navigation .prev {
+  flex: 1;
+  text-align: left;
+}
+
+.page-navigation .next {
+  flex: 1;
+  text-align: right;
 }
 
 .page-navigation a {
+  display: inline-block;
   padding: 10px 15px;
   background-color: #f5f5f5;
   border-radius: 3px;
   text-decoration: none;
   color: #333;
+  transition: all 0.2s;
 }
 
 .page-navigation a:hover {
-  background-color: #e5e5e5;
+  background-color: #4078c0;
+  color: white;
 }
