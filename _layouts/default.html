@@ -6,42 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="{{ '/assets/css/book.css' | relative_url }}">
     {% seo %}
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-        <p>{{ site.description }}</p>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        </div>
+        <div class="nav-links">
+          <a href="{{ site.github.repository_url }}" target="_blank">GitHub</a>
+          <button class="nav-toggle" id="navToggle">☰ Chapters</button>
+        </div>
+      </div>
+    </nav>
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+    <div class="book-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2>Chapters</h2>
+          <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        <nav class="chapter-nav">
+          {% for item in site.navigation %}
+          <a href="{{ item.url | relative_url }}"
+             class="chapter-link {% if page.url contains item.url %}active{% endif %}">
+            {{ item.title }}
+          </a>
+          {% endfor %}
+        </nav>
+      </aside>
 
-        <p class="view"><a href="{{ site.github.repository_url }}">View on GitHub</a></p>
+      <!-- Main Content -->
+      <main class="main-content">
+        <article class="book-content">
+          {{ content }}
 
-        {% include navigation.html %}
+          {% if page.nav_order %}
+            {% include page-nav.html %}
+          {% endif %}
+        </article>
 
-      </header>
-      <section>
-
-      {{ content }}
-
-      {% if page.nav_order %}
-        {% include page-nav.html %}
-      {% endif %}
-
-      </section>
-      <footer>
-        <p><small>{{ site.tagline }}</small></p>
-        <p><small>Hosted on GitHub Pages</small></p>
-      </footer>
+        <footer class="page-footer">
+          <p>{{ site.tagline }}</p>
+          <p>Hosted on GitHub Pages</p>
+        </footer>
+      </main>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+    <!-- Overlay for mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script>
+      // Toggle sidebar on mobile
+      const navToggle = document.getElementById('navToggle');
+      const sidebar = document.getElementById('sidebar');
+      const sidebarClose = document.getElementById('sidebarClose');
+      const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+      function openSidebar() {
+        sidebar.classList.add('open');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeSidebar() {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      navToggle.addEventListener('click', openSidebar);
+      sidebarClose.addEventListener('click', closeSidebar);
+      sidebarOverlay.addEventListener('click', closeSidebar);
+
+      // Close sidebar when clicking a link on mobile
+      const chapterLinks = document.querySelectorAll('.chapter-link');
+      chapterLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+            closeSidebar();
+          }
+        });
+      });
+    </script>
   </body>
 </html>

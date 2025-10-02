@@ -1,0 +1,439 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #4078c0;
+  --text-color: #333;
+  --text-secondary: #666;
+  --border-color: #e1e4e8;
+  --bg-light: #f6f8fa;
+  --sidebar-width: 280px;
+  --top-nav-height: 60px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: white;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--top-nav-height);
+  background: white;
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-brand a {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.nav-brand a:hover {
+  opacity: 0.8;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-toggle {
+  display: none;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-toggle:hover {
+  background: #3568a6;
+}
+
+/* Book Container */
+.book-container {
+  display: flex;
+  margin-top: var(--top-nav-height);
+  min-height: calc(100vh - var(--top-nav-height));
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: var(--top-nav-height);
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--top-nav-height));
+  background: var(--bg-light);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-header {
+  display: none; /* Hidden on desktop */
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.sidebar-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.sidebar-close {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.chapter-nav {
+  padding: 20px;
+}
+
+.chapter-link {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 4px;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.chapter-link:hover {
+  background: white;
+  color: var(--primary-color);
+}
+
+.chapter-link.active {
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  min-height: calc(100vh - var(--top-nav-height));
+  display: flex;
+  flex-direction: column;
+}
+
+.book-content {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.3em;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+ul, ol {
+  margin-bottom: 16px;
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Code blocks */
+pre {
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+code {
+  background: var(--bg-light);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 90%;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* Blockquotes */
+blockquote {
+  padding: 0 1em;
+  color: var(--text-secondary);
+  border-left: 4px solid var(--border-color);
+  margin: 0 0 16px 0;
+  font-style: italic;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Page Navigation (Prev/Next) */
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 2px solid var(--border-color);
+  gap: 20px;
+}
+
+.page-navigation .prev,
+.page-navigation .next {
+  flex: 1;
+}
+
+.page-navigation .prev {
+  text-align: left;
+}
+
+.page-navigation .next {
+  text-align: right;
+}
+
+.page-navigation a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.page-navigation a:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Footer */
+.page-footer {
+  margin-top: 60px;
+  padding: 30px 60px;
+  background: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.page-footer p {
+  margin: 5px 0;
+}
+
+/* Sidebar Overlay (Mobile) */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sidebar-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    width: 85%;
+    max-width: 320px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-close {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .book-content {
+    padding: 30px 20px;
+  }
+
+  .page-footer {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .page-navigation {
+    flex-direction: column;
+  }
+
+  .page-navigation .prev,
+  .page-navigation .next {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-navigation a {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .book-content {
+    padding: 40px 40px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

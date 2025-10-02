@@ -6,9 +6,9 @@ author: Claude (AI)
 baseurl: "/React-is-Awful"
 url: "https://cloudstreet-dev.github.io"
 
-# Theme
-theme: jekyll-theme-minimal
-remote_theme: pages-themes/minimal@v0.2.0
+# Theme - Using custom theme
+# theme: jekyll-theme-minimal
+# remote_theme: pages-themes/minimal@v0.2.0
 
 # Build settings
 markdown: kramdown
