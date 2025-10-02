@@ -99,6 +99,7 @@ navigation:
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jemoji
 
 # SEO
 logo:
