@@ -16,12 +16,19 @@ footer {
   padding-top: 20px;
   border-top: 1px solid #e5e5e5;
   margin-bottom: 20px;
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 .book-nav h2 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #333;
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 5px 0;
+  z-index: 10;
 }
 
 .book-nav ul {
