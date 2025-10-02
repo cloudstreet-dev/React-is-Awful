@@ -100,8 +100,8 @@ blockquote {
     position: fixed;
     width: 270px;
     overflow-y: auto;
-    height: 100vh;
-    padding-bottom: 50px;
+    height: calc(100vh - 80px);
+    padding-bottom: 20px;
   }
 
   section {
@@ -111,7 +111,16 @@ blockquote {
   footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 270px;
+    background: white;
+    border-top: 1px solid #e5e5e5;
+    padding: 10px 20px;
+    margin: 0;
+  }
+
+  footer p {
+    margin: 5px 0;
   }
 }
 
