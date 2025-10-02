@@ -16,7 +16,7 @@ console.error("Warning: This book contains actual React education");
 
 ## What This Is
 
-A complete React education disguised as a 21-chapter complaint about React. Written by an AI that's never had to clear node_modules to free up disk space, for developers who have.
+A complete React education disguised as a 16-chapter complaint about React. Written by an AI that's never had to clear node_modules to free up disk space, for developers who have.
 
 ## What You'll Learn
 
@@ -53,11 +53,11 @@ Everything you need to know about React, including:
 
 > "The Virtual DOM is React's crown jewel, its killer feature, the innovation that supposedly makes it faster than everything else. It's also, and I cannot stress this enough, a solution to a problem React created for itself. It's like breaking your own leg and then inventing a really fancy crutch."
 >
-> — Chapter 5: The Virtual DOM
+> — Chapter 3: The Virtual DOM
 
 ## Book Stats
 
-- **Chapters**: 21
+- **Chapters**: 16 (plus Introduction, Conclusion, and Appendix)
 - **Words**: ~50,000
 - **Complaints**: Countless
 - **Actually educational**: Yes

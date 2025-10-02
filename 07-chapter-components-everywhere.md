@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Chapter 7: Components"
+title: "Chapter 5: Components"
 nav_order: 8
 ---
 
-# Chapter 7: Components: Everything is a Nail When You Have a Hammer
+# Chapter 5: Components: Everything is a Nail When You Have a Hammer
 
 In React's world, everything is a component. Your header? Component. Your button? Component. That space between two words? Probably should be a component. That feeling of existential dread as you contemplate your career choices? Definitely a component.
 

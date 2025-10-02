@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Chapter 12: Patterns"
+title: "Chapter 10: Patterns"
 nav_order: 13
 ---
 
-# Chapter 12: Patterns and Anti-Patterns: The Good, The Bad, The React
+# Chapter 10: Patterns and Anti-Patterns: The Good, The Bad, The React
 
 React patterns are like fashion trends. What's hot today is tomorrow's code smell. What was an anti-pattern last year is this year's best practice. And just like fashion, everyone pretends they always knew bell-bottoms would come back.
 

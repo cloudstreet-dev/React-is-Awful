@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Chapter 5: Virtual DOM"
+title: "Chapter 3: The Virtual DOM"
 nav_order: 6
 ---
 
-# Chapter 5: The Virtual DOM: A Beautiful Lie
+# Chapter 3: The Virtual DOM: A Beautiful Lie
 
 The Virtual DOM is React's crown jewel, its killer feature, the innovation that supposedly makes it faster than everything else. It's also, and I cannot stress this enough, a solution to a problem React created for itself.
 

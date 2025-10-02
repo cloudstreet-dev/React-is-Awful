@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Chapter 17: Alternatives"
+title: "Chapter 15: Alternatives"
 nav_order: 18
 ---
 
-# Chapter 17: The Grass Isn't Always Greener: Vue, Svelte, and Why You'll Be Back
+# Chapter 15: The Grass Isn't Always Greener: Vue, Svelte, and Why You'll Be Back
 
 Every React developer goes through a phase where they think, "There must be a better way." They're right. There are better ways. But you'll probably end up using React anyway because the job market has spoken, and it said "React or unemployment."
 

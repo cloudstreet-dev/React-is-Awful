@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Chapter 3: Why React Exists"
+title: "Chapter 1: Why React Exists"
 nav_order: 4
 ---
 
-# Chapter 3: The Problem React Claims to Solve (That Wasn't Really a Problem)
+# Chapter 1: The Problem React Claims to Solve (That Wasn't Really a Problem)
 
 In 2013, Facebook had a problem. Not a "the servers are on fire" problem, or a "we're hemorrhaging users" problem. No, Facebook had a much more first-world problem: their notification counter was sometimes wrong.
 

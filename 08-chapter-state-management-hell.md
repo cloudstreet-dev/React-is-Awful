@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Chapter 8: State Management"
+title: "Chapter 6: State Management"
 nav_order: 9
 ---
 
-# Chapter 8: State Management: Choose Your Own Adventure in Hell
+# Chapter 6: State Management: Choose Your Own Adventure in Hell
 
 State management in React is like a Choose Your Own Adventure book where every choice leads to suffering, just different flavors of it. Do you want the suffering of prop drilling? The suffering of Context API re-renders? The suffering of Redux boilerplate? Or the suffering of choosing between 47 different state management libraries?
 

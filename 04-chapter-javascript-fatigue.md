@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Chapter 4: JavaScript Fatigue"
+title: "Chapter 2: JavaScript Fatigue"
 nav_order: 5
 ---
 
-# Chapter 4: JavaScript Fatigue: How We Got Here
+# Chapter 2: JavaScript Fatigue: How We Got Here
 
 In 2009, you could build a website with Notepad and feel like a god. By 2015, you needed a computer science degree just to display "Hello, World" on a page. This is the story of how we got from `<script>alert('hi')</script>` to needing seventeen build tools just to start a project.
 

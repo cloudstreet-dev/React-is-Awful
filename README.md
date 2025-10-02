@@ -10,7 +10,7 @@ console.error("Warning: This book contains actual React education");
 
 ## What This Is
 
-A complete React education disguised as a 21-chapter complaint about React. Written by an AI that's never had to clear node_modules to free up disk space, for developers who have.
+A complete React education disguised as a 16-chapter complaint about React. Written by an AI that's never had to clear node_modules to free up disk space, for developers who have.
 
 ## What You'll Learn
 
@@ -43,25 +43,28 @@ $ npm install
 
 ## Table of Contents
 
-1. **Introduction**: Why You're Reading This (And Why You Hate React)
-2. **The Problem React Claims to Solve** (That Wasn't Really a Problem)
-3. **JavaScript Fatigue**: How We Got Here
-4. **The Virtual DOM**: A Beautiful Lie
-5. **JSX**: When HTML and JavaScript Had a Baby Nobody Asked For
-6. **Components**: Everything is a Nail When You Have a Hammer
-7. **State Management**: Choose Your Own Adventure in Hell
-8. **Hooks**: The Magic That Makes You Miss Classes
-9. **useEffect**: The Footgun You'll Shoot Yourself With
-10. **Props Drilling**: Pass It Down, Pass It Down, Pass It Down...
-11. **Patterns and Anti-Patterns**: The Good, The Bad, The React
-12. **Performance**: When React is Actually Fast (Sometimes)
-13. **Testing**: Because Your Components Need Therapy Too
-14. **The Ecosystem**: 47 Ways to Build the Same Thing
-15. **Building Something Real**: A Todo App (Of Course)
-16. **Alternatives**: The Grass Isn't Always Greener
-17. **Acceptance**: Making React Work for You
-18. **Conclusion**: You've Learned React. I'm Sorry.
-19. **Resources**: For Recovery
+**Introduction**: Why You're Reading This (And Why You Hate React)
+
+1. **The Problem React Claims to Solve** (That Wasn't Really a Problem)
+2. **JavaScript Fatigue**: How We Got Here
+3. **The Virtual DOM**: A Beautiful Lie
+4. **JSX**: When HTML and JavaScript Had a Baby Nobody Asked For
+5. **Components**: Everything is a Nail When You Have a Hammer
+6. **State Management**: Choose Your Own Adventure in Hell
+7. **Hooks**: The Magic That Makes You Miss Classes
+8. **useEffect**: The Footgun You'll Shoot Yourself With
+9. **Props Drilling**: Pass It Down, Pass It Down, Pass It Down...
+10. **Patterns and Anti-Patterns**: The Good, The Bad, The React
+11. **Performance**: When React is Actually Fast (Sometimes)
+12. **Testing**: Because Your Components Need Therapy Too
+13. **The Ecosystem**: 47 Ways to Build the Same Thing
+14. **Building Something Real**: A Todo App (Of Course)
+15. **Alternatives**: The Grass Isn't Always Greener
+16. **Acceptance**: Making React Work for You
+
+**Conclusion**: You've Learned React. I'm Sorry.
+
+**Appendix**: Resources for Recovery
 
 ## Who This Book Is For
 
@@ -111,7 +114,7 @@ const readingStrategy = {
 
 ## Book Stats
 
-- **Chapters**: 21
+- **Chapters**: 16 (plus Introduction, Conclusion, and Appendix)
 - **Words**: ~50,000
 - **Complaints**: Countless
 - **Actually educational**: Yes
