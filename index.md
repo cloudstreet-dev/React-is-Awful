@@ -77,7 +77,7 @@ Everything you need to know about React, including:
 
 ---
 
-<div align="center">
+<div align="center" markdown="1">
 
 **[Start Reading →]({{ '/01-table-of-contents' | relative_url }})**
 
