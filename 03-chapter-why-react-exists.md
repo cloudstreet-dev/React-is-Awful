@@ -63,26 +63,29 @@ var LoginComponent = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
     var self = this;
-    
-    fetch('/api/login', {
-      method: 'POST',
-      body: JSON.stringify({ username: this.state.username }),
-      headers: { 'Content-Type': 'application/json' }
-    })
-    .then(function(response) { return response.json(); })
-    .then(function(data) {
-      if (data.success) {
-        self.setState({
-          isLoggedIn: true,
-          userName: data.name,
-          error: null
-        });
-      } else {
-        self.setState({
-          error: data.error
-        });
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/api/login', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        if (data.success) {
+          self.setState({
+            isLoggedIn: true,
+            userName: data.name,
+            error: null
+          });
+        } else {
+          self.setState({
+            error: data.error
+          });
+        }
       }
-    });
+    };
+
+    xhr.send(JSON.stringify({ username: this.state.username }));
   },
   
   render: function() {
